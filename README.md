@@ -1,4 +1,43 @@
 # CodeAlpha_CGPA_Calculator
+This C++ program is a CGPA (Cumulative Grade Point Average) calculator designed to help students track their academic progress across semesters.
+
+Key Features:
+	•	User Input:
+	•	Current semester number
+	•	Previous CGPA and total credits
+	•	Number of courses for the current semester
+	•	For each course: course name, credit hours, and letter grade
+	•	Grade Conversion:
+	•	Uses a helper function getGradePoint() to convert letter grades (A, B+, etc.) into numerical grade points.
+	•	Validation:
+	•	Ensures inputs like CGPA, credits, and grades are valid.
+	•	Exits the program with appropriate messages if invalid data is entered.
+	•	Calculation Logic:
+	•	Computes the total grade points earned in the current semester.
+	•	Calculates the semester GPA (currentGPA) and updated CGPA (cgpa) using cumulative data.
+	•	Output:
+	•	Displays each course with its corresponding credit, grade, and grade points.
+	•	Displays the total semester credits, total grade points, semester GPA, and updated CGPA.
+
+Usage Example:
+
+A user enters:
+	•	Previous CGPA: 3.50
+	•	Previous credits: 45
+	•	3 courses for the current semester with grades like A, B+, and C
+
+The program then shows the semester GPA and new CGPA based on the input.
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -26,7 +65,6 @@ int main() {
     int currentSemester;
     double previousCGPA;
     double previousTotalCredits;
-
     std::cout << "Enter the current semester: ";
     std::cin >> currentSemester;
 
